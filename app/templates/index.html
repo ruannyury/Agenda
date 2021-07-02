@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <style>
+        body{
+            background-color: #7270EF;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/cadastro.css') }}" media="screen">
+
+</head>
+<body>
+    <div style="background-image: url(static/images/ThePlanner2.svg); height: 907px; width: 914px; top: 42px; left: 583px;"></div>
+    <div style="background-image: url(static/images/ThePlanner3.svg); height: 167px; width: 157px; top: 258.53px; left: 988px;"></div>
+    <img src="static/images/ThePlanner1.svg" id="imgPlanner1">
+    <h1>Bem-vindo de volta</h1>
+    <h3>Faça login:</h3>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" id="entrar" name="entrar">Entrar</button>
+
+    <h3>Crie sua conta:</h3>
+    <form action="" method="POST">
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Nome" name="name">
+        </div>
+        <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="Email" name="email">
+        </div>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username">
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" name="password">
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit" id="cadastrar">Cadastrar</button>
+    </form>
+</body>
+</html>

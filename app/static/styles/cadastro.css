@@ -1,0 +1,14 @@
+p{
+    color: purple;
+}
+
+/* cadastro */
+body{
+    position: absolute;
+    width: 1440px;
+    height: 10px;
+    left: -12px;
+    top: -16px;
+
+    background: #7270EF;
+}
