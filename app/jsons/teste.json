@@ -1,0 +1,15 @@
+{
+    "ruann yury": {
+        "id": "1",
+        "name": "Ruann Yury",
+        "email": "ruann@yury.com",
+        "username": "ruannyury",
+        "password": "1234"
+    },
+    "israel leite": {
+        "name": "Isra Leite",
+        "email": "isra@leite.com",
+        "username": "isra",
+        "password": "12345"
+    }
+}

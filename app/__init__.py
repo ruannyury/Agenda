@@ -1,8 +1,9 @@
 from flask import Flask
-from os import path
-from flask_login import LoginManager
+
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from flask_login import LoginManager
+from os import path
 
 
 db = SQLAlchemy()
@@ -15,7 +16,7 @@ def create_app():
     app.config['SECRET_KEY'] = '123'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
-    app.config['TEMPLATES_AUTO_RELOAD'] = True
+
     db.init_app(app)
     migrate.init_app(app, db)
 
@@ -34,10 +35,11 @@ def create_app():
     login_manager.init_app(app)
 
     @login_manager.user_loader
-    def load_user(id):
-        return User.query.get(int(id))
+    def load_user(id_user):
+        return User.query.get(int(id_user))
 
     return app
+
 
 def create_database(app):
     if not path.exists('app/' + DB_NAME):

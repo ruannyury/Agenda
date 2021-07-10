@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Home{% endblock %}</title>
+    <style>
+        body{
+            background-color: #7270EF;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/cadastro.css') }}" media="screen">
+
+</head>
+<body>
+    <div style="background-image: url(static/images/ThePlanner2.svg); height: 907px; width: 914px; top: 42px; left: 583px;"></div>
+    <img src="static/images/ThePlanner1.svg" id="imgPlanner1">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link"><b>The Planner</b></a>
+                <a class="nav-item nav-link" id="home" href="/home">Home</a>
+                <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
+                <a class="nav-item nav-link" id="inserir" href="/inserir">Inserir</a>
+                <a class="nav-item nav-link" id="apagar" href="/apagar">Apagar</a>
+                <a class="nav-item nav-link" id="atualizar" href="/atualizar">Atualizar</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+
+</body>
+</html>

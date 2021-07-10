@@ -18,23 +18,25 @@
     <img src="static/images/ThePlanner1.svg" id="imgPlanner1">
     <h1>Bem-vindo de volta</h1>
     <h3>Faça login:</h3>
-    <button class="w-100 btn btn-lg btn-primary" type="submit" id="entrar" name="entrar">Entrar</button>
+    <form method="get" action="/login">
+        <button class="btn btn-primary" type="submit" id="entrar" value="entrar">Entrar</button>
+    </form>
 
-    <h3>Crie sua conta:</h3>
-    <form action="" method="POST">
-        <div class="form-floating">
+    <form method="POST">
+        <h3>Crie sua conta:</h3>
+        <div class="form-group">
             <input type="text" class="form-control" id="floatingInput" placeholder="Nome" name="name">
         </div>
-        <div class="form-floating">
+        <div class="form-group">
             <input type="email" class="form-control" id="floatingInput" placeholder="Email" name="email">
         </div>
-        <div class="form-floating">
+        <div class="form-group">
             <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username">
         </div>
-        <div class="form-floating">
+        <div class="form-group">
             <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" name="password">
         </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit" id="cadastrar">Cadastrar</button>
+        <button class="btn btn-primary" type="submit">Cadastrar</button>
     </form>
 </body>
 </html>

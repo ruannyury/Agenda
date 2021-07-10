@@ -9,26 +9,30 @@
         }
     </style>
 
-    <link rel="stylesheet" type="text/css" href="css/login.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/cadastro.css') }}" media="screen">
 
 </head>
 <body>
-    <div style="background-image: url(images/ThePlanner2.svg); height: 907px; width: 914px; top: 42px; left: 583px;"></div>
-    <div style="background-image: url(images/ThePlanner3.svg); height: 167px; width: 157px; top: 258.53px; left: 988px;"></div>
-    <img src="images/ThePlanner1.svg">
+    <div style="background-image: url(static/images/ThePlanner2.svg); height: 907px; width: 914px; top: 42px; left: 583px;"></div>
+    <div style="background-image: url(static/images/ThePlanner3.svg); height: 167px; width: 157px; top: 258.53px; left: 988px;"></div>
+    <img src="static/images/ThePlanner1.svg" id="imgPlanner1">
 
     <h3>Faça login:</h3>
 
-    <form action="" method="POST">
+    <form method="POST">
         <div class="form-floating">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username">
+            <input type="text" id="floatingInput" placeholder="Username" name="username">
         </div>
         <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" name="password">
+            <input type="password" id="floatingPassword" placeholder="Senha" name="password">
         </div>
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
+        <button class="btn btn-primary" type="submit">Entrar</button>
     </form>
-    <button onclick="window.location.href='index.html'">Voltar</button>
+
+    <form method="get" action="/">
+        <button type="submit">Voltar</button>
+    </form>
+
 
 </body>
 </html>
