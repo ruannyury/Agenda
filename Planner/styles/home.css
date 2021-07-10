@@ -1,0 +1,122 @@
+
+.wrapper{
+    display: flex;
+    background: white;
+    font-size: 1.6rem;
+    width: 82.3rem;
+    height: 51.5rem;
+    border-radius: 2rem;
+    top: 50%;
+    margin: auto;
+    transform: translate(0, 15.5%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+}
+
+.wrapper form{
+    display:grid;
+    margin-left: 5.5rem;
+    margin-top: 10.3rem;
+
+}
+
+.wrapper form ::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.wrapper form input{
+    padding: 0 1.6rem;
+    height: 5rem;
+    width: 44.2rem;
+    background: var(--grey);
+    outline: none;
+    
+}
+
+.wrapper2{
+    background: var(--yellow);
+    border-radius: 2rem 0rem 0 2rem;
+    width: 27.5rem;
+}
+
+.wrapper2 img{
+    padding-left: 2.7rem;
+    padding-top: 3rem;
+    width: 22rem;
+    height: 19.7rem;
+
+}
+
+.wrapper2 h1{
+    font-size: 4.6rem;
+    font-family: 'Rokkitt', sans-serif;
+    font-weight: 600;
+    padding-left: 2.7rem;
+    padding-bottom: 2.8rem;
+
+}
+
+.wrapper2 p{
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    padding-left: 2.7rem;
+    padding-bottom: 3.5rem;
+}
+
+.wrapper2 button{
+    
+    margin-left: 3.8rem;
+    width: 18.7rem;
+    height: 6.6rem;
+    background: var(--purple);
+    border-radius: 4rem;
+    border: solid grey 1px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+   
+}
+
+.create{
+    position: absolute;
+    font-family: 'Rokkitt', sans-serif;
+    font-size: 3rem;
+    color: var(--purple);
+    left: 45.5rem;
+    top: 4.2rem;
+}
+
+.logofundo{
+    position: fixed;
+    padding-left: 74rem;
+    padding-top: 12.8rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    height: 20rem;
+
+    transform: rotate(-18.35deg);
+    
+}
+
+.register{
+    margin-left: 9.7rem;
+    margin-bottom: 1rem;
+    width: 25.7rem;
+    height: 6.6rem;
+    background: var(--purple);
+    color: var(--yellow);
+    border-radius: 4rem;
+    border: solid grey 1px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
