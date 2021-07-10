@@ -2,5 +2,22 @@
 
 {% block content %}
 
+<h3>Inserir novo contato:</h3>
+
+<form method="POST">
+    <div class="form-floating">
+        <input type="text" id="floatingInput" placeholder="Nome" name="name">
+    </div>
+    <div class="form-floating">
+        <input type="email" id="floatingInput" placeholder="Email" name="email">
+    </div>
+    <div class="form-floating">
+        <input type="text" id="floatingInput" placeholder="Numero" name="number">
+    </div>
+    <div class="form-floating">
+        <input type="text" id="floatingInput" placeholder="Endereco" name="address">
+    </div>
+    <button class="btn btn-primary" type="submit">Inserir</button>
+</form>
 
 {% endblock %}

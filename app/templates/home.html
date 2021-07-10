@@ -2,11 +2,14 @@
 
 {% block content %}
 
-<h3>Sua lista de contatos</h3>
+<h3>Sua lista de contatos:</h3>
 <ul class="list-group list-group-flush" id="contatos">
     {% for contato in addressbook[user.name.lower()] %}
     <li>
-        { print(f'{contatos["nome"]} {contatos["idade"]}') }
+        {{ contato["name"], contato["email"], contato["number"], contato["address"] }}
+        <button type="button" class="close" onClick = "deletecontact({{ contato }})">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </li>
     {% endfor %}
 </ul>

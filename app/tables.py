@@ -56,7 +56,7 @@ class AddressBook:
     def __init__(self, name):
         self._name = name
         self._contact = ""
-        self._contacts = [{"Teste": "Teste"}]
+        self._contacts = []
 
     def to_json(self):
         return self._contacts

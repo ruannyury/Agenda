@@ -39,13 +39,13 @@ def carrega_addressbooks():
         "admin": []  # Contatos do admin
     }
 
-    if os.path.exists('addressbooks.json'):
-        with open('addressbooks.json', 'r', encoding='utf8') as f:
+    if os.path.exists('app/jsons/addressbooks.json'):
+        with open('app/jsons/addressbooks.json', 'r', encoding='utf8') as f:
             addressbooks = json.load(f)
 
     return addressbooks
 
 
 def guarda_addressbooks(addressbooks):
-    with open('addressbooks.json', 'w', encoding='utf8') as f:
+    with open('app/jsons/addressbooks.json', 'w', encoding='utf8') as f:
         json.dump(addressbooks, f, indent=4, ensure_ascii=False)
