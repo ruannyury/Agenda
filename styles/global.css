@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* font-family: 'Purple Purse', cursive;
+       font-family: 'Roboto', sans-serif; */
+}
+
+
+body{
+    
+    background-color: #7270EF;
+}
+
+html{
+    
+    --grey: #EAEAEA;
+    --yellow: #FAFF00;
+    --purple: #7270EF;
+
+
+    font-size: 62.5% /* 10px */
+
+}
