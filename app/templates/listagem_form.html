@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block title %}Listar{% endblock %}
+
+{% block content %}
+
+<form method="POST">
+    <h3>Listar contatos por:</h3>
+    <div>
+        <label>Nome</label>
+        <input name="campo" type="checkbox" id="campo" value="name">
+        <br>
+        <label>Email</label>
+        <input name="campo" type="checkbox" id="campo" value="email">
+        <br>
+        <label>Number</label>
+        <input name="campo" type="checkbox" id="campo" value="number">
+        <br>
+        <label>Address</label>
+        <input name="campo" type="checkbox" id="campo" value="address">
+        <br>
+    </div>
+    <br><br><br>
+    <div><button class="btn btn-primary" type="submit">Listar</button></div>
+</form>
+<form method="get" action="/home">
+    <button class="btn btn-primary" type="submit" id="voltar" value="voltar">Voltar</button>
+</form>
+
+
+{% endblock %}

@@ -9,15 +9,61 @@ from app.tables import Contact
 views = Blueprint('views', __name__)
 
 
+def procura(campo, dicionario):
+    for nome, contatos in dicionario.items():
+        for contato in contatos:
+            for valor in contato.values():
+                if campo == valor:
+                    return contato
+
+    return None
+
+
 @views.route('/home', methods=['GET', 'POST'])
 @login_required
 def home():
 
     if request.method == "POST":
-        pesquisa = request.form.get('pesquisa').upper()
-        print(pesquisa)
+        campo = request.form.get('pesquisa')
+        addressbok = carrega_addressbooks()
+
+        print(campo)
+
+        contato = procura(campo, addressbok)
+
+        if contato is None:
+            flash('Contato não encontrado. Tente novamente.', category='error')
+            return redirect(url_for('views.home'))
+
+        return render_template('pesquisa.html', user=current_user, contato=contato)
 
     return render_template('home.html', user=current_user, addressbook=carrega_addressbooks())
+
+
+def lista_jinja(dicionario, campo):
+
+    nome_user = str(current_user.name.lower())
+    list_listagem = []
+
+    for contato in dicionario[nome_user]:
+        list_listagem.append(contato[campo])
+
+    return list_listagem
+
+
+@views.route('/listar', methods=['GET', 'POST'])
+@login_required
+def listar():
+    if request.method == 'POST':
+
+        addressbook = carrega_addressbooks()
+        campo = request.form.get('campo')
+
+        list_listagem = lista_jinja(addressbook, campo)
+
+        return render_template('listagem.html', user=current_user, listagem=list_listagem)
+
+    return render_template('listagem_form.html', user=current_user)
 
 
 @views.route('/inserir', methods=['GET', 'POST'])
@@ -69,7 +115,6 @@ def atualizar():
 @login_required
 def atualizar2(contato):
     if request.method == 'POST':
-
 
         name = request.form.get('name')
         email = request.form.get('email')

@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block title %}Pesquisa - Resultado{% endblock %}
+
+{% block content %}
+
+<h3>Contato encontrado:</h3>
+<ul class="list-group list-group-flush" id="contatos">
+    <li>
+        {{ contato["name"], contato["email"], contato["number"], contato["address"] }}
+    </li>
+</ul>
+
+<form method="get" action="/home">
+    <button class="btn btn-primary" type="submit" id="voltar" value="voltar">Voltar</button>
+</form>
+{% endblock %}
