@@ -26,7 +26,6 @@
                 <a class="nav-item nav-link" id="home" href="/home">Home</a>
                 <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
                 <a class="nav-item nav-link" id="inserir" href="/inserir">Inserir</a>
-                <a class="nav-item nav-link" id="apagar" href="/apagar">Apagar</a>
                 <a class="nav-item nav-link" id="atualizar" href="/atualizar">Atualizar</a>
             </div>
         </div>
@@ -37,6 +36,11 @@
         {% block content %}
         {% endblock %}
     </div>
+
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='index.js') }}"
+    ></script>
 
 
 </body>
