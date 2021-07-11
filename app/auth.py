@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, flash, url_for, redirect
 from flask_login import login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
-from app.tables import User, AddressBook
+from app.tables import User, ClassFactory
 from app.jsons.funcs_jsons import *
 
 from . import db
@@ -76,7 +76,8 @@ def sign_up():
             db.session.add(new_user)
             db.session.commit()
 
-            new_address_book = AddressBook(new_user.name)
+            # new_address_book = AddressBook(new_user.name)
+            new_address_book = ClassFactory.build_obj(1, new_user.name)
 
             addressbooks = carrega_addressbooks()
             addressbooks[new_address_book.get_name().lower()] = new_address_book.get_contacts()

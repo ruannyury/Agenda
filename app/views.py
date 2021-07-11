@@ -3,7 +3,7 @@ import json
 from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
 from flask_login import current_user, login_required
 from app.jsons.funcs_jsons import carrega_addressbooks, guarda_addressbooks
-from app.tables import Contact
+from app.tables import ClassFactory
 
 
 views = Blueprint('views', __name__)
@@ -76,7 +76,7 @@ def inserir():
         number = request.form.get('number')
         address = request.form.get('address')
 
-        new_contact = Contact(name, email, number, address)
+        new_contact = ClassFactory.build_obj(2, name, email, number, address)
 
         addressbook = carrega_addressbooks()
 
@@ -103,7 +103,7 @@ def atualizar():
         number = request.form.get('number')
         address = request.form.get('address')
 
-        contact = Contact(name, email, number, address)
+        contact = ClassFactory.build_obj(2, name, email, number, address)
 
         return redirect(url_for('views.atualizar2', contato=contact.to_json()))
 
@@ -121,7 +121,7 @@ def atualizar2(contato):
         number = request.form.get('number')
         address = request.form.get('address')
 
-        new_contact = Contact(name, email, number, address)
+        new_contact = ClassFactory.build_obj(2, name, email, number, address)
 
         addressbook = carrega_addressbooks()
 
