@@ -3,7 +3,8 @@
 {% block content %}
 
 <form method="POST">
-    <h4>Preencha os dados do contato a ser atualizado:</h4>
+    <h4>Preencha os novos dados do contato:</h4>
+    <h6>Caso não deseje alterar certos dados, preencha-os como eles já são.</h6>
     <div class="form-group">
         <input type="text" class="form-control" id="floatingInput" placeholder="Nome" name="name">
     </div>
@@ -16,11 +17,7 @@
     <div class="form-group">
         <input type="text" class="form-control" id="floatingInput" placeholder="Endereco" name="address">
     </div>
-    <button class="btn btn-primary" type="submit">Next</button>
+    <button class="btn btn-primary" type="submit">Atualizar</button>
 </form>
-<form method="get" action="/home">
-    <button class="btn btn-primary" type="submit" id="voltar" value="voltar">Voltar</button>
-</form>
-
 
 {% endblock %}

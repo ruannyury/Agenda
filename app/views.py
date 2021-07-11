@@ -51,12 +51,25 @@ def inserir():
 def atualizar():
 
     if request.method == "POST":
-        dado = json.loads(request.data)
-        contact = dado['contato']
-        print(contact)
-        addressbook = carrega_addressbooks()
 
-        nome_user = str(current_user.name.lower())
+        name = request.form.get('name')
+        email = request.form.get('email')
+        number = request.form.get('number')
+        address = request.form.get('address')
+
+        contact = Contact(name, email, number, address)
+
+        return redirect(url_for('views.atualizar2', contato=contact.to_json()))
+
+    return render_template('atualizar.html', user=current_user, addressbook=carrega_addressbooks())
+
+
+@views.route('/update2/<contato>', methods=['GET', 'POST'])
+@views.route('/atualizar2/<contato>', methods=['GET', 'POST'])
+@login_required
+def atualizar2(contato):
+    if request.method == 'POST':
+
 
         name = request.form.get('name')
         email = request.form.get('email')
@@ -65,17 +78,29 @@ def atualizar():
 
         new_contact = Contact(name, email, number, address)
 
+        addressbook = carrega_addressbooks()
+
+        nome_user = str(current_user.name.lower())
         for nome, contatos in addressbook.items():
-            if nome == nome_user and contatos == contact:
-                print(contact)
-                print(contatos)
-                contatos.remove(contact)
-                contatos.append(new_contact.to_json())
-                guarda_addressbooks(addressbook)
+
+            if nome == nome_user:
+
+                for contact in contatos:
+
+                    print(contato)
+                    print(contact)
+
+                    if str(contact) == str(contato):
+
+                        print('==LOOP PARA ATUALIZAR!==')
+                        contatos.remove(contact)
+                        contatos.append(new_contact.to_json())
+
+                    guarda_addressbooks(addressbook)
 
         return redirect(url_for('views.home'))
 
-    return render_template('atualizar.html', user=current_user, addressbook=carrega_addressbooks())
+    return render_template('atualizar2.html', user=current_user)
 
 
 @views.route('/delete-contact', methods=['POST'])
