@@ -4,13 +4,18 @@ from abc import ABCMeta, abstractmethod
 
 
 class IClass(metaclass=ABCMeta):
-
+    """
+    Superclasse.
+    """
     @abstractmethod
     def class_method(self):
         pass
 
 
 class User(db.Model, UserMixin):
+    """
+    Sem receber a metaclasse devido a conflitos de heranças.
+    """
     __tablename__ = "user"
 
     id = db.Column(db.Integer, primary_key=True)
@@ -47,7 +52,7 @@ class AddressBook(IClass):
         self._contact = ""
         self._contacts = []
 
-    def class_method(self):
+    def class_method(self) -> None:
         print('Class address.')
 
     def get_name(self):
@@ -65,7 +70,7 @@ class Contact(IClass):
         self._name = name
         self._address = address
 
-    def class_method(self):
+    def class_method(self) -> None:
         print('Class contact.')
 
     def to_json(self):

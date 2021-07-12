@@ -10,6 +10,12 @@ views = Blueprint('views', __name__)
 
 
 def procura(campo, dicionario):
+    """
+    Função de pesquisa da página Home.
+    :param campo:
+    :param dicionario:
+    :return contato or None:
+    """
     for nome, contatos in dicionario.items():
         for contato in contatos:
             for valor in contato.values():
@@ -27,8 +33,6 @@ def home():
         campo = request.form.get('pesquisa')
         addressbok = carrega_addressbooks()
 
-        print(campo)
-
         contato = procura(campo, addressbok)
 
         if contato is None:
@@ -41,7 +45,12 @@ def home():
 
 
 def lista_jinja(dicionario, campo):
-
+    """
+    Lista os contatos de acordo com o tipo de campo introduzido e retorna-os numa lista.
+    :param dicionario:
+    :param campo:
+    :return list_listagem:
+    """
     nome_user = str(current_user.name.lower())
     list_listagem = []
 

@@ -18,7 +18,6 @@ def login():
         password = request.form.get('password')
 
         user = User.query.filter_by(username=username).first()
-        # print(user)
         if user:
             if check_password_hash(user.password, password):
                 flash('Logado com sucesso!', category='success')
@@ -76,7 +75,6 @@ def sign_up():
             db.session.add(new_user)
             db.session.commit()
 
-            # new_address_book = AddressBook(new_user.name)
             new_address_book = ClassFactory.build_obj(1, new_user.name)
 
             addressbooks = carrega_addressbooks()
