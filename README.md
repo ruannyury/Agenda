@@ -1,4 +1,6 @@
-# Agenda - Projeto de Engenharia de Software
-Equipe: Tiago de Tarso, Israel Leite, Rafael Pinheiro, Ruann Yury
+# The planner
+## Uma agenda simples feita com Flask e um pouco de SQLAlchemy
 
-Agenda web simples com Python e Flask.
+Projeto da disciplina de Engenharia de Software (Prof. César Olavo).
+
+Equipe: Tiago de Tarso, Israel Leite, Rafael Pinheiro, Ruann Yury
