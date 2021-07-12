@@ -28,5 +28,19 @@
     ],
     "isra": [],
     "rafolas": [],
-    "alessandro lima": []
+    "alessandro lima": [],
+    "pelé romário josé": [
+        {
+            "name": "Neymar Amor do Brasil",
+            "email": "neymar@brasil.com",
+            "number": "16944563124",
+            "address": "Suiça, Jacarecanga"
+        },
+        {
+            "name": "Sidnei Magal",
+            "email": "sidnei@magal.com",
+            "number": "123456789",
+            "address": "Rua, Laurentino Tiririca"
+        }
+    ]
 }

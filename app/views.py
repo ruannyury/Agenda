@@ -31,9 +31,9 @@ def home():
 
     if request.method == "POST":
         campo = request.form.get('pesquisa')
-        addressbok = carrega_addressbooks()
+        addressbook = carrega_addressbooks()
 
-        contato = procura(campo, addressbok)
+        contato = procura(campo, addressbook)
 
         if contato is None:
             flash('Contato não encontrado. Tente novamente.', category='error')
@@ -140,9 +140,6 @@ def atualizar2(contato):
             if nome == nome_user:
 
                 for contact in contatos:
-
-                    print(contato)
-                    print(contact)
 
                     if str(contact) == str(contato):
 
