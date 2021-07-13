@@ -16,3 +16,7 @@ Equipe: Tiago de Tarso, Israel Leite, Rafael Pinheiro, Ruann Yury
 CREATE:
 
 ![alt text](https://i.ibb.co/N2c7HTX/adicionarcontatos.png)
+
+READ:
+
+![alt text](https://i.ibb.co/myWzxn5/mostracontatos.png)
