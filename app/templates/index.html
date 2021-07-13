@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro</title>
-    <style>
-        body{
-            background-color: #7270EF;
-        }
-    </style>
 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/cadastro.css') }}" media="screen">
-
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/global.css') }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/home.css') }}" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Rokkitt:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div style="background-image: url(static/images/ThePlanner2.svg); height: 907px; width: 914px; top: 42px; left: 583px;"></div>
-    <div style="background-image: url(static/images/ThePlanner3.svg); height: 167px; width: 157px; top: 258.53px; left: 988px;"></div>
-    <img src="static/images/ThePlanner1.svg" id="imgPlanner1">
-    <h1>Bem-vindo de volta</h1>
-    <h3>Faça login:</h3>
-    <form method="get" action="/login">
-        <button class="btn btn-primary" type="submit" id="entrar" value="entrar">Entrar</button>
-    </form>
+    <div class="wrapper">
 
-    <form method="POST">
-        <h3>Crie sua conta:</h3>
-        <div class="form-group">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Nome" name="name">
+        <div class="wrapper2">
+            <img src="static/images/logo.svg">
+            <h1>Bem-vindo<br> de volta!</h1>
+            <p>Faça login:</p>
+            <form action="/login" method="GET" id="formulario">
+                <button type="submit" id="entrar" name="entrar">Entrar</button>
+            </form>
         </div>
-        <div class="form-group">
-            <input type="email" class="form-control" id="floatingInput" placeholder="Email" name="email">
-        </div>
-        <div class="form-group">
-            <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username">
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" name="password">
-        </div>
-        <button class="btn btn-primary" type="submit">Cadastrar</button>
-    </form>
+    <h3 class="create">Crie sua conta:</h3>
+
+        <form method="POST" id="formprincipal">
+            <div class="name">
+                <input type="text" placeholder="Nome" name="name">
+            </div>
+            <div class="email">
+                <input type="email" placeholder="Email" name="email">
+            </div>
+            <div class="user">
+                <input type="text" placeholder="Username" name="username">
+            </div>
+            <div class="pass">
+                <input type="password" placeholder="Senha" name="password">
+            </div>
+            <button class="register" type="submit" id="cadastrar">Cadastrar</button>
+        </form>
+    </div>
 </body>
 </html>

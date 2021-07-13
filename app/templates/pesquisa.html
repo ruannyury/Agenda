@@ -1,15 +1,41 @@
-{% extends "base.html" %} {% block title %}Pesquisa - Resultado{% endblock %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
 
-{% block content %}
-
-<h3>Contato encontrado:</h3>
-<ul class="list-group list-group-flush" id="contatos">
-    <li>
-        {{ contato["name"], contato["email"], contato["number"], contato["address"] }}
-    </li>
-</ul>
-
-<form method="get" action="/home">
-    <button class="btn btn-primary" type="submit" id="voltar" value="voltar">Voltar</button>
-</form>
-{% endblock %}
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/global.css') }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Rokkitt:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="principal">
+        <h2 class="search">Busca específica:</h2>
+        <form method="POST">
+            <input class="searchbar" type="text" placeholder="Nome completo, endereço ou email" name="pesquisa">
+            <button type="submit" class="searchbutton">Pesquisar</button>
+        </form>
+        <div class="nav">
+            <img src="static/images/logo.svg">
+            
+            <a href="/home" class="home">Home</a>
+            <a href="/listar">Listar</a>
+            <a href="/">Logout</a>
+            <a href="/inserir">Inserir</a>
+            <a href="/atualizar">Atualizar</a>
+        </div>
+        <div class="wrapper" style="overflow:scroll;">
+            <h2>Sua lista de contatos:</h2>
+            <br>
+            <ul class="list-group list-group-flush" id="contatos">
+            <li>
+                {{ contato["name"], contato["email"], contato["number"], contato["address"] }}
+            </li>
+        </ul>
+        </div>
+        
+    </div>
+</body>
+</html>

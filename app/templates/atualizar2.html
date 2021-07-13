@@ -1,23 +1,36 @@
-{% extends "base.html" %} {% block title %}Atualizar{% endblock %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
 
-{% block content %}
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/global.css') }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Rokkitt:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="principal">
+        <h2 id="insert">Novos dados:</h2>
+        <form method="POST">
+            <input id="param1" type="text" placeholder="Nome" name="name">
+            <input id="param2" type="text" placeholder="Email" name="email">
+            <input id="param3" type="text" placeholder="Número" name="number">
+            <input id="param4" type="text" placeholder="Endereço" name="address">
+            <button type="submit" id="insertbutton">Próximo</button>
+        </form>
+        <div class="nav">
+            <h2 id="OPLANO">THE<br>PLANNER</h2>
 
-<form method="POST">
-    <h4>Preencha os novos dados do contato:</h4>
-    <h6>Caso não deseje alterar certos dados, preencha-os como eles já são.</h6>
-    <div class="form-group">
-        <input type="text" class="form-control" id="floatingInput" placeholder="Nome" name="name">
-    </div>
-    <div class="form-group">
-        <input type="email" class="form-control" id="floatingInput" placeholder="Email" name="email">
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control" id="floatingInput" placeholder="Numero" name="number">
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control" id="floatingInput" placeholder="Endereco" name="address">
-    </div>
-    <button class="btn btn-primary" type="submit">Atualizar</button>
-</form>
+            <a href="/home" class="home">Home</a>
+            <a href="/listar">Listar</a>
+            <a href="/">Logout</a>
+            <a href="/inserir">Inserir</a>
+            <a href="/atualizar">Atualizar</a>
+        </div>
 
-{% endblock %}
+        
+    </div>
+</body>
+</html>

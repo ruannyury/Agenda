@@ -1,29 +1,43 @@
-{% extends "base.html" %} {% block title %}Listar{% endblock %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
 
-{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/global.css') }}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&family=Rokkitt:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="principal">
+        <h2 class="search">Listar contatos por:</h2>
+        <form method="POST">
+            <input name="campo" id="check1" type="checkbox" value="name">
+            <label id="label1">Nome</label>
+            <input name="campo" id="check2" type="checkbox" value="email">
+            <label id="label2">Email</label>
+            <input name="campo" id="check3" type="checkbox" value="number">
+            <label id="label3">Número</label>
+            <input name="campo" id="check4" type="checkbox" value="address">
+            <label id="label4">Endereço</label>
+            <button type="submit" class="searchbutton">Pesquisar</button>
+        </form>
+        <div class="nav">
+            <img src="static/images/logo.svg">
 
-<form method="POST">
-    <h3>Listar contatos por:</h3>
-    <div>
-        <label>Nome</label>
-        <input name="campo" type="checkbox" id="campo" value="name">
-        <br>
-        <label>Email</label>
-        <input name="campo" type="checkbox" id="campo" value="email">
-        <br>
-        <label>Number</label>
-        <input name="campo" type="checkbox" id="campo" value="number">
-        <br>
-        <label>Address</label>
-        <input name="campo" type="checkbox" id="campo" value="address">
-        <br>
+            <a href="/home" class="home">Home</a>
+            <a href="/listar">Listar</a>
+            <a href="/">Logout</a>
+            <a href="/inserir">Inserir</a>
+            <a href="/atualizar">Atualizar</a>
+        </div>
+        <div class="wrapper">
+            <h2>Sua lista de contatos:</h2>
+            
+        </div>
+        
     </div>
-    <br><br><br>
-    <div><button class="btn btn-primary" type="submit">Listar</button></div>
-</form>
-<form method="get" action="/home">
-    <button class="btn btn-primary" type="submit" id="voltar" value="voltar">Voltar</button>
-</form>
-
-
-{% endblock %}
+</body>
+</html>

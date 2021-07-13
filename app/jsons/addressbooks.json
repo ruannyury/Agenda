@@ -8,12 +8,6 @@
             "address": "Federação do Pirambu"
         },
         {
-            "name": "Cesolavo",
-            "email": "corno@mauamado.com",
-            "number": "856666666666",
-            "address": "José Walter"
-        },
-        {
             "name": "Maria Joaquina",
             "email": "maria@joaquina.rica",
             "number": "1234",
@@ -24,6 +18,12 @@
             "email": "isra@leite123.com",
             "number": "8549851229",
             "address": "Rua Seu Armando, 150, Jóquei"
+        },
+        {
+            "name": "PABLO MOURA",
+            "email": "PABLO@EMAIL.COM",
+            "number": "123",
+            "address": "COREIA DO NORTE"
         }
     ],
     "isra": [],
@@ -42,5 +42,6 @@
             "number": "123456789",
             "address": "Rua, Laurentino Tiririca"
         }
-    ]
+    ],
+    "israel leite filho": []
 }
