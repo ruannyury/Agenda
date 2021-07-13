@@ -11,7 +11,7 @@ Equipe: Tiago de Tarso, Israel Leite, Rafael Pinheiro, Ruann Yury
 ![alt text](https://i.ibb.co/jZ7wrQP/usecase.png)
 
 
-CRUD
+<b>CRUD</b>
 
 CREATE:
 
