@@ -25,3 +25,7 @@ UPDATE:
 
 ![alt text](https://i.ibb.co/tmyz24X/atualizarcontatos.png)
 
+DELETE:
+
+![alt text](https://i.ibb.co/2yVxC8P/deletarcontatos.png)
+
