@@ -11,7 +11,7 @@ Equipe: Tiago de Tarso, Israel Leite, Rafael Pinheiro, Ruann Yury
 ![alt text](https://i.ibb.co/jZ7wrQP/usecase.png)
 
 
-<b>CRUD</b>
+<b>Diagrama de Estado (CRUD)</b>
 
 CREATE:
 
@@ -28,4 +28,10 @@ UPDATE:
 DELETE:
 
 ![alt text](https://i.ibb.co/2yVxC8P/deletarcontatos.png)
+
+<b>Diagramas de Atividade</b>
+ 
+Navegação de Telas e Login: 
+
+![alt text](https://i.ibb.co/DKJdwcH/diagramaatividade.png)
 
