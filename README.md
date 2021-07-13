@@ -4,3 +4,6 @@
 Projeto da disciplina de Engenharia de Software (Prof. César Olavo).
 
 Equipe: Tiago de Tarso, Israel Leite, Rafael Pinheiro, Ruann Yury
+
+3: Diagrama de Caso de Uso 
+![alt text](https://i.ibb.co/jZ7wrQP/usecase.png)
