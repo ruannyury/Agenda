@@ -7,6 +7,8 @@ Equipe: Tiago de Tarso, Israel Leite, Rafael Pinheiro, Ruann Yury
 
 <b>2: Telas</b>
 
+(Design feito com Figma)
+
 ![alt text](https://github.com/ruannyury/Agenda/blob/main/Telas/TELA1.png)
 
 ![alt text](https://github.com/ruannyury/Agenda/blob/main/Telas/TELA2.png)
