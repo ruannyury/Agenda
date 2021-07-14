@@ -66,6 +66,9 @@ Figma - https://www.figma.com
 
 Frameworks e bibliotecas - <a href="https://github.com/ruannyury/Agenda/blob/main/requirements.txt">Requirements</a>
 
+<b>Design Patterns</b>
+Factories - Criação das classes (<a href="https://github.com/ruannyury/Agenda/blob/main/app/models/models.py">Models</a>) e dos objetos (<a href="https://github.com/ruannyury/Agenda/blob/main/app/auth.py">Auth</a>, linha 78, e em <a href="https://github.com/ruannyury/Agenda/blob/main/app/views.py">Views</a>, linhas 88, 115 e 133)
+
 <h3>Referências</h3>
 Documentação do Python - https://docs.python.org/pt-br/3/tutorial/index.html
 
