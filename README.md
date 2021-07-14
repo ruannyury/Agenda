@@ -8,7 +8,7 @@ Equipe: Tiago de Tarso, Israel Leite, Rafael Pinheiro, Ruann Yury
 <b>3: Diagrama de Caso de Uso</b> 
 
 
-![alt text](https://i.ibb.co/jZ7wrQP/usecase.png)
+![alt text](https://i.ibb.co/xMW0TCM/Diagrama-de-caso-de-uso.png)
 
 1 - Servidor busca usuário no sistema, se não houver, requisita seu cadastro
 
