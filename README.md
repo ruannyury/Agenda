@@ -10,6 +10,10 @@ Equipe: Tiago de Tarso, Israel Leite, Rafael Pinheiro, Ruann Yury
 
 ![alt text](https://i.ibb.co/jZ7wrQP/usecase.png)
 
+1 - Servidor busca usuário no sistema, se não houver, requisita seu cadastro
+2 - Com o usuário logado ou registrado é possível criar e/ou editar os contatos (CRUD)
+3 - Fazer logout
+
 
 <b>Diagrama de Estado (CRUD)</b>
 
