@@ -51,6 +51,6 @@ Listagem de Contatos
 
 ![alt text](https://i.ibb.co/9rWkm7s/Diagrama-de-componentes.png)
 
-
+Padrão utilizado: MVC, pastas divididas entre models (com banco de dados e JSON), views (templates com html) e controllers (auth.py)
 
 
