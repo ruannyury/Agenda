@@ -8,22 +8,16 @@
             "address": "Federação do Pirambu"
         },
         {
-            "name": "Maria Joaquina",
-            "email": "maria@joaquina.rica",
-            "number": "1234",
-            "address": "França, Paris"
-        },
-        {
             "name": "Israel Leite de Açúcar",
             "email": "isra@leite123.com",
             "number": "8549851229",
             "address": "Rua Seu Armando, 150, Jóquei"
         },
         {
-            "name": "PABLO MOURA",
-            "email": "PABLO@EMAIL.COM",
-            "number": "123",
-            "address": "COREIA DO NORTE"
+            "name": "Maria Joaquina",
+            "email": "maria@joaquina.rica",
+            "number": "1234",
+            "address": "França, Paris"
         }
     ],
     "isra": [],
@@ -42,6 +36,5 @@
             "number": "123456789",
             "address": "Rua, Laurentino Tiririca"
         }
-    ],
-    "israel leite filho": []
+    ]
 }

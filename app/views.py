@@ -3,7 +3,7 @@ import json
 from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
 from flask_login import current_user, login_required
 from app.jsons.funcs_jsons import carrega_addressbooks, guarda_addressbooks
-from app.tables import ClassFactory
+from app.models.models import ClassFactory
 
 
 views = Blueprint('views', __name__)

@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, flash, url_for, redirect
 from flask_login import login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
-from app.tables import User, ClassFactory
+from app.models.models import User, ClassFactory
 from app.jsons.funcs_jsons import *
 
 from . import db
