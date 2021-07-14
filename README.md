@@ -47,6 +47,9 @@ Listagem de Contatos
 
 ![alt text](https://i.ibb.co/S3pjzzD/diagramadeestado.png)
 
+<b>Diagrama de Componentes</b>
+
+![alt text](https://i.ibb.co/9rWkm7s/Diagrama-de-componentes.png)
 
 
 
