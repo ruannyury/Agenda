@@ -53,4 +53,7 @@ Listagem de Contatos
 
 Padrão utilizado: MVC, pastas divididas entre models (com banco de dados e JSON), views (templates com html) e controllers (auth.py)
 
+<b>Diagrama de Implantação</b>
+
+![alt text](https://i.ibb.co/0m36CNM/Diagrama-de-implanta-o.png)
 
