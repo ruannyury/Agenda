@@ -41,7 +41,7 @@ Listagem de Contatos
 
 <b>Diagrama de Classes</b>
 
-![alt text](https://i.ibb.co/BP6NNst/classdiagram.png)
+![alt text](https://i.ibb.co/25G4grV/classeumlfinal.png)
 
 
 
