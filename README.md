@@ -43,6 +43,10 @@ Listagem de Contatos
 
 ![alt text](https://i.ibb.co/25G4grV/classeumlfinal.png)
 
+<b>Diagrama de Estado de um objeto Usuário</b>
+
+![alt text](https://i.ibb.co/S3pjzzD/diagramadeestado.png)
+
 
 
 
