@@ -9,7 +9,21 @@ Equipe: Tiago de Tarso, Israel Leite, Rafael Pinheiro, Ruann Yury
 
 ![alt text](https://github.com/ruannyury/Agenda/blob/main/Telas/TELA1.png)
 
+![alt text](https://github.com/ruannyury/Agenda/blob/main/Telas/TELA2.png)
 
+![alt text](https://github.com/ruannyury/Agenda/blob/main/Telas/TELA3.png)
+
+![alt text](https://github.com/ruannyury/Agenda/blob/main/Telas/TELA4.png)
+
+![alt text](https://github.com/ruannyury/Agenda/blob/main/Telas/tela5listar.png)
+
+![alt text](https://github.com/ruannyury/Agenda/blob/main/Telas/tela5resultadolistar.png)
+
+![alt text](https://github.com/ruannyury/Agenda/blob/main/Telas/TELA6inserir.png)
+
+![alt text](https://github.com/ruannyury/Agenda/blob/main/Telas/tela7atualizar.png)
+
+![alt text](https://github.com/ruannyury/Agenda/blob/main/Telas/tela7atualizar2.png)
 
 
 <b>3: Diagrama de Caso de Uso</b> 
