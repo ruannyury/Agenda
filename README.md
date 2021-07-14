@@ -57,3 +57,24 @@ Padrão utilizado: MVC, pastas divididas entre models (com banco de dados e JSON
 
 ![alt text](https://i.ibb.co/0m36CNM/Diagrama-de-implanta-o.png)
 
+<h3>Ferramentas</h3>
+Online Visual Paradigm - https://online.visual-paradigm.com/
+
+LucidChart - https://www.lucidchart.com/pages/pt/exemplos/fluxograma-online
+
+Figma - https://www.figma.com
+
+Frameworks e bibliotecas - <a href="https://github.com/ruannyury/Agenda/blob/main/requirements.txt">Requirements</a>
+
+<h3>Referências</h3>
+Documentação do Python - https://docs.python.org/pt-br/3/tutorial/index.html
+
+Curso de UML - Unified Modeling Language - https://www.youtube.com/playlist?list=PLucm8g_ezqNqCRGHGHoacCo6N1bfN7hXZ
+
+Documentação do SQLAlchemy- https://docs.sqlalchemy.org/en/14/
+
+Documentação do Flask Login - https://flask-login.readthedocs.io/en/latest/
+
+Curso de Flask - Júlia Rizza - https://youtube.com/playlist?list=PL3BqW_m3m6a05ALSBW02qDXmfDKIip2KX
+
+Projeto Criptocurrency - Ruann Yury e Israel Leite - https://github.com/ruannyury/cryptocurrency
