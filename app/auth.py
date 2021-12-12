@@ -23,6 +23,7 @@ def login():
                 flash('Logado com sucesso!', category='success')
                 login_user(user, remember=True)
                 return redirect(url_for('views.home'))
+            
             else:
                 flash('Senha incorreta, tente novamente!', category='error')
         else:
