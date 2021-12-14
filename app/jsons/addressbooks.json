@@ -12,18 +12,6 @@
             "email": "isra@leite123.com",
             "number": "8549851229",
             "address": "Rua Seu Armando, 150, Jóquei"
-        },
-        {
-            "name": "Maria Joaquina",
-            "email": "maria@joaquina.rica",
-            "number": "1234",
-            "address": "França, Paris"
-        },
-        {
-            "name": "Ruann Yury Novo Dado",
-            "email": "ruannyury@outlook.com",
-            "number": "8549851220",
-            "address": "Alemanha, Berlim"
         }
     ],
     "isra": [],
@@ -226,5 +214,21 @@
         }
     ],
     "rafael pinheiro camisa dez": [],
-    "carlos alberto": []
+    "carlos alberto": [],
+    "rafael penhiros": [
+        {
+            "name": "Rafael",
+            "email": "rafael@rafa.com",
+            "number": "85946591534",
+            "address": "Rua Mário, Fátima, 127"
+        },
+        {
+            "name": "Ruann Yury",
+            "email": "ruannyury1@outlook.com",
+            "number": "85985492912",
+            "address": "Rua Tabatinga"
+        }
+    ],
+    "césar": [],
+    "tafareu": []
 }

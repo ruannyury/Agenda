@@ -84,6 +84,6 @@ def sign_up():
 
             login_user(new_user, remember=True)
             flash('Conta criada!', category='sucess')
-            return redirect(url_for('views.home'))
+            return redirect(url_for('auth.sign_up'))
 
     return render_template('index.html', user=current_user)
