@@ -12,6 +12,7 @@ DB_NAME = 'database.db'
 
 
 def create_app():
+    
     app = Flask(__name__)
     app.config['SECRET_KEY'] = '123'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True

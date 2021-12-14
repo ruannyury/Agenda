@@ -1,4 +1,5 @@
 function deletecontact(contato){
+    
     fetch('/delete-contact',{
         method: 'POST',
         body: JSON.stringify({ contato: contato })

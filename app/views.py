@@ -45,6 +45,7 @@ def home():
 
 
 def lista_jinja(dicionario, campo):
+    
     """
     Lista os contatos de acordo com o tipo de campo introduzido e retorna-os numa lista.
     :param dicionario:

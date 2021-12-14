@@ -74,6 +74,7 @@ class Contact(IClass):
         print('Class contact.')
 
     def to_json(self):
+        
         return {
             "name": self._name,
             "email": self._email,
